@@ -9,6 +9,11 @@ body{
 	align-items: center;
 	height: 100vh;
 }
+#mobile-view{
+	display: none;
+	visibility: hidden;
+	color: black;
+}
 .key{
 	display: flex;
 	flex-direction: column;
@@ -35,4 +40,20 @@ body{
 .key span{
 	font-size: .8rem;
 	color: #ffc600;
+}
+
+@media(max-width: 425px){
+	.keys{
+		display: none;
+	}
+	#mobile-view{
+		display: contents;
+		visibility: visible;
+		background-color: #ffffff80;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100vh;
+		font-size: .8em;
+	}
 }
